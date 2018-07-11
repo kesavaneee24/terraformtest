@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "s3bucketcreation" {
   policy = "${file("${path.module}/s3publicpolicy.json")}"
 
    website {
-    index_document = "${path.module}/index.html"
-    error_document = "${path.module}/error.html"
+    index_document = "./index.html"
+    error_document = "./error.html"
   }
 }
