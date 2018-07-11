@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "s3bucketcreation" {
 resource "aws_s3_bucket_object" "index" {
   bucket = "${aws_s3_bucket.s3bucketcreation.bucket}"
   key = "index.html"
-  source = "D:\Jees PoC\Websitecreation\terraformtest\index.html"
+  source = "D:/Jees PoC/Websitecreation/terraformtest/index.html"
   content_type = "text/html"
   #etag = "${md5(file("src/index.html"))}"
 }
